@@ -58,21 +58,100 @@
         />
       </div>
     </header>
-    <main class="main">
+    <main class="main p-5 lg:p-0">
       <!-- chearch Section -->
       <div>
         <h1 class="lg:text-3xl font-semibold text-center">Search your phone</h1>
-        <!-- Shearch section -->
-          <div class="mt-5 lg:mt-7 mx-auto lg:w-[60%] flex items-center justify-between">
-            <input type="text" placeholder="Search your phone" class="lg:py-6 text-black bg-purple-200  input w-full" />
-            <button
-              class="text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
-            >
+        <!-- Search section -->
+        <div
+          class="mt-5 lg:mt-7 mx-auto lg:w-[60%] flex items-center justify-between"
+        >
+          <input
+            type="text"
+            placeholder="Search your phone"
+            class="lg:py-6 text-black bg-purple-200 input w-full"
+          />
+          <button
+            class="text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
+          >
             Search
-            </button>
-          </div>
+          </button>
+        </div>
+
+        <!-- Loading Spinner -->
+         <div class="text-center mt-5" id="spinner">
+          <span class="lg:w-16 loading loading-spinner text-secondary"></span>
+         </div>
+
+        <!-- Show All btn -->
+        <div class="text-center">
+          <button
+            class="mt-5 lg:mt-5 text-white bg-primary btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+          >
+            Show All
+          </button>
+        </div>
       </div>
     </main>
+
+    <footer class="p-5 lg:p-0 container mx-auto mt-24 lg:mt-52">
+      <!-- foot nav content -->
+      <div
+        class="footer lg:flex lg:flex-row flex-col lg:justify-between lg:items-center"
+      >
+        <!-- foot title -->
+        <div>
+          <h3 class="text-xl lg:text-3xl font-semibold">Hot Gadgets</h3>
+          <p>You can definitely work.</p>
+        </div>
+        <!-- foot icon -->
+        <div class="mt-5 lg:mt-0 flex items-center gap-7">
+          <img src="images/Facebook.png" />
+          <img src="images/Instagram.png" />
+          <img src="images/Twitter.png" />
+          <div>
+            <button
+              class="text-white bg-primary btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            >
+              Join Premium
+            </button>
+          </div>
+        </div>
+      </div>
+       <!-- divider -->
+        <div class="divider my-8"></div>
+      <!-- nav link items -->
+      <footer class="footer">
+        <nav>
+          <h6 class="footer-title">Product</h6>
+          <a class="link link-hover">Browse jobs</a>
+          <a class="link link-hover">Remote jobs</a>
+          <a class="link link-hover">Startup jobs</a>
+          <a class="link link-hover">Company jobs</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Popular</h6>
+          <a class="link link-hover">UIUX Designr</a>
+          <a class="link link-hover">Product Design</a>
+          <a class="link link-hover"> Back-End Developer</a>
+          <a class="link link-hover"> Front-End Develope</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Resource</h6>
+          <a class="link link-hover">FaQ</a>
+          <a class="link link-hover"> Support</a>
+          <a class="link link-hover"> Privacy Policy </a>
+          <a class="link link-hover"> Terms of Service</a>
+        </nav>
+        <nav>
+          <h6 class="footer-title">Company</h6>
+          <a class="link link-hover"> About Us</a>
+          <a class="link link-hover"> Contact Us</a>
+          <a class="link link-hover"> Contact Us</a>
+          <a class="link link-hover"> Career Tips</a>
+        </nav>
+      </footer>
+    </footer>
 
     <script src="scripts/phone.js"></script>
   </body>
