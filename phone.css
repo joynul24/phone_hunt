@@ -1,5 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap");
 
+*{
+  padding: 0;
+  margin: 0;
+}
+
 .font-poppins {
   font-family: "Poppins", serif;
 }
@@ -15,4 +20,9 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.main {
+  max-width: 90%;
+  margin: 40px auto;
 }
