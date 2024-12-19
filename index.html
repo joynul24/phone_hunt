@@ -25,7 +25,7 @@
         <div>
           <a href="https://www.applegadgetsbd.com/blog/">
             <button
-              class="text-white bg-primary btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+              class="text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg hover:bg-red-500"
             >
               Blog
             </button>
@@ -43,7 +43,7 @@
         </p>
         <a href="https://www.applegadgetsbd.com/product/iphone-13-pro-max">
           <button
-            class="mt-5 lg:mt-8 text-white bg-primary btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            class="mt-5 lg:mt-8 text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg hover:bg-red-500"
           >
             Buy Now
           </button>
@@ -58,6 +58,7 @@
         />
       </div>
     </header>
+
     <main class="main p-5 lg:p-0">
       <!-- chearch Section -->
       <div>
@@ -67,34 +68,50 @@
           class="mt-5 lg:mt-7 mx-auto lg:w-[60%] flex items-center justify-between"
         >
           <input
+            id="search-box"
             type="text"
             placeholder="Search your phone"
-            class="lg:py-6 text-black bg-purple-200 input w-full"
+            class="lg:py-6 text-black bg-purple-200 input w-full focus:border-blue-500"
           />
           <button
-            class="text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg"
+            onclick="hangleSearch()"
+            class="text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg hover:bg-red-500"
           >
             Search
           </button>
         </div>
 
         <!-- Loading Spinner -->
-         <div class="text-center mt-5" id="spinner">
+        <div class="hidden text-center mt-5" id="spinner">
           <span class="lg:w-16 loading loading-spinner text-secondary"></span>
-         </div>
+        </div>
 
         <!-- Show All btn -->
         <div class="text-center">
           <button
-            class="mt-5 lg:mt-5 text-white bg-primary btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+            onclick="hangleShowAll()"
+            class="mt-5 lg:mt-5 text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg hover:bg-red-500"
           >
             Show All
           </button>
         </div>
+
+        <!-- all phone in this container -->
+        <div
+          id="phones-container"
+          class="mt-5 flex justify-around items-center flex-wrap"
+        ></div>
+      </div>
+
+      <!-- show modal here -->
+      <!-- Open the modal using ID.showModal() method -->
+
+      <div id="modal-container">
+        
       </div>
     </main>
 
-    <footer class="p-5 lg:p-0 container mx-auto mt-24 lg:mt-52">
+    <footer class="p-5 lg:p-0 container mx-auto mb-5 mt-24 lg:mt-52">
       <!-- foot nav content -->
       <div
         class="footer lg:flex lg:flex-row flex-col lg:justify-between lg:items-center"
@@ -111,15 +128,15 @@
           <img src="images/Twitter.png" />
           <div>
             <button
-              class="text-white bg-primary btn btn-xs sm:btn-sm md:btn-md lg:btn-lg"
+              class="text-white bg-primary btn btn-xl sm:btn-sm md:btn-md lg:btn-lg hover:bg-red-500"
             >
               Join Premium
             </button>
           </div>
         </div>
       </div>
-       <!-- divider -->
-        <div class="divider my-8"></div>
+      <!-- divider -->
+      <div class="divider my-8"></div>
       <!-- nav link items -->
       <footer class="footer">
         <nav>
