@@ -22,7 +22,7 @@ const displayAllPhone = (phones) => {
     const { brand, image, slug } = phone;
     const div = document.createElement('div');
     div.innerHTML = `
-        <div class="card m-2 bg-red-200 w-96 shadow-xl">
+        <div class="card m-2 bg-red-200 shadow-xl">
       <figure class="px-10 pt-10">
        <img
        src="${image}"
